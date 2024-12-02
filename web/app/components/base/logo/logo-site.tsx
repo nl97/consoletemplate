@@ -2,6 +2,7 @@
 import type { FC } from 'react'
 import classNames from '@/utils/classnames'
 import { useSelector } from '@/context/app-context'
+import Image from 'next/image'
 
 type LogoSiteProps = {
   className?: string
@@ -10,18 +11,14 @@ type LogoSiteProps = {
 const LogoSite: FC<LogoSiteProps> = ({
   className,
 }) => {
-  const { theme } = useSelector((s) => {
-    return {
-      theme: s.theme,
-    }
-  })
-
-  const src = theme === 'light' ? '/logo/logo-site.png' : `/logo/logo-site-${theme}.png`
   return (
-    <img
-      src={src}
-      className={classNames('block w-auto h-10', className)}
-      alt='logo'
+    <Image
+      src="https://console.mind-verse.de/logo/logo-site.png"
+      alt="Logo"
+      width={120}
+      height={30}
+      className={className}
+      priority
     />
   )
 }

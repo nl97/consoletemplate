@@ -22,9 +22,6 @@ const translation = {
     'Deleting the app is irreversible. Users will no longer be able to access your app, and all prompt configurations and logs will be permanently deleted.',
   appDeleted: 'App deleted',
   appDeleteFailed: 'Failed to delete app',
-  join: 'Join the community',
-  communityIntro:
-    'Discuss with team members, contributors and developers on different channels.',
   roadmap: 'See our roadmap',
   newApp: {
     startFromBlank: 'Create from Blank',
